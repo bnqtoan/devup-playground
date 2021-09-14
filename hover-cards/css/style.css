@@ -659,16 +659,16 @@ video {
   left: 0px;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.-bottom-20 {
+  bottom: -5rem;
 }
 
 .left-0 {
   left: 0px;
 }
 
-.-bottom-20 {
-  bottom: -5rem;
+.bottom-0 {
+  bottom: 0px;
 }
 
 .z-20 {
@@ -688,24 +688,8 @@ video {
   margin-bottom: 2rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.mb-9 {
-  margin-bottom: 2.25rem;
 }
 
 .mb-10 {
@@ -728,18 +712,8 @@ video {
   width: 100%;
 }
 
-.scale-110 {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: var(--tw-transform);
-}
-
 .transform {
   transform: var(--tw-transform);
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .gap-4 {
@@ -758,24 +732,9 @@ video {
   border-width: 2px;
 }
 
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
-}
-
-.border-pink-500 {
-  --tw-border-opacity: 1;
-  border-color: rgba(236, 72, 153, var(--tw-border-opacity));
-}
-
 .border-pink-600 {
   --tw-border-opacity: 1;
   border-color: rgba(219, 39, 119, var(--tw-border-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
 }
 
 .bg-pink-600 {
@@ -818,14 +777,14 @@ video {
   font-family: 'Poppins', sans-serif;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -835,10 +794,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-
-.opacity-50 {
-  opacity: 0.5;
 }
 
 .opacity-80 {
@@ -853,16 +808,6 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.hover\:bg-red-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
-}
-
-.hover\:bg-pink-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(236, 72, 153, var(--tw-bg-opacity));
 }
 
 .hover\:bg-pink-600:hover {
@@ -882,4 +827,15 @@ video {
 
 .group:hover .group-hover\:opacity-80 {
   opacity: 0.8;
+}
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
