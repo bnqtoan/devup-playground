@@ -12,15 +12,27 @@
         <h1 class="text-primary my-4 text-lg font-bold">UI Components</h1>
         <hr class="my-4">
         <h2 class="mb-8">Checkbox</h2>
-        <label class="flex items-center gap-x-3" x-data="{checked: $refs['checkbox'].checked}">
-            <input x-ref="checkbox" class="hidden" x-on:click="checked != checked" x-model="checked" type="checkbox"/>
-            <span x-bind:class="{'bg-primary border-primary': checked}" class="relative w-6 h-6 inline-flex items-center justify-center border-2 border-theme-gray rounded-3">
-                <svg x-show="checked" class="" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.375 9L7.125 12.75L14.625 5.25" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                
-            </span>
-            <span>Tôi đồng ý với các điều khoản</span>
-        </label>
+        <div class="sm:grid grid-cols-2">
+            <div>
+                <h3 class="font-bold mb-4 text-red-500">Before UI Customization</h3>
+                <label>
+                    <input type="checkbox">
+                    <span>Tôi đồng ý với các điều khoản</span>
+                </label>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4 text-green-500">After UI Customization</h3>  
+                <label class="group cursor-pointer flex items-center gap-x-3" x-data="{checked: $refs['checkbox'].checked}">
+                    <input x-ref="checkbox" class="hidden" x-on:click="checked != checked" x-model="checked" type="checkbox"/>
+                    <span x-bind:class="{'bg-primary border-primary': checked, 'border-theme-gray': !checked}" class="group-hover:scale-110 transform transition-all relative w-6 h-6 inline-flex items-center justify-center border-2 rounded-3">
+                        <svg x-show="checked" class="" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.375 9L7.125 12.75L14.625 5.25" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                
+                    </span>
+                    <span>Tôi đồng ý với các điều khoản</span>
+                </label>
+            </div>
+        </div>
     </div>
     <script src="//unpkg.com/alpinejs" defer></script>
 </body>
