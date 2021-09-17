@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common cases</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-center py-4">
+            <h1 class="font-bold text-2xl text-blue-600">
+                <a href="./">Stylesheet common cases</a>
+            </h1>
+        </div>
+        <div class="grid grid-cols-3 gap-8"
+            x-data="{
+                cases: [
+                                {
+                                    'id': 1,
+                                    'title': 'Limit text',
+                                    'description': 'Limit text by lines',
+                                    'link': './line-limit.html'
+                                }
+                        ]
+                }">
+            <template x-for="c in cases" :key="c.id">
+                <div class="p-4 hover:shadow-md relative border border-gray-300 hover:-translate-y-1 transition rounded-md">
+                    <h3 class="font-bold mb-2 text-blue-500" x-text="c.title"></h3>
+                    <div class="text-sm" x-text="c.description"></div>
+                    <a :href="c.link" class="absolute inset-0"></a>
+                </div>
+            </template>
+        </div>
+    </div>
+    <script src="//unpkg.com/alpinejs" defer></script>
+</body>
+</html>

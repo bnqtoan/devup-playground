@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limit text</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-center py-4 mb-10">
+            <h1 class="font-bold text-2xl text-gray-600">
+                <a href="./">Stylesheet common cases: Text limit by line</a>
+            </h1>
+            <div class="my-4 italic text-gray-600">
+                Using Plugin <a target="_blank" href="https://github.com/tailwindlabs/tailwindcss-line-clamp">@tailwindcss/line-clamp</a> which provides utilities for visually truncating text after a fixed number of lines.
+            </div>
+        </div>
+        <hr class="my-8">
+        <div class="grid grid-cols-3 gap-8 mb-8">
+            <div class="card bg-gray-100 relative hover:drop-shadow">
+                <img src="./images/cover.jpg" alt="cover">
+                <div class="p-6">
+                    <h3 class="font-bold mb-4">Save your time by using Trydo and present yours.</h3>
+                    <div class="opacity-60">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. have suffered alteration in some form majority.
+                    </div>
+                </div>
+                <a href="#" class="absolute inset-0"></a>
+                <div class="absolute top-4 right-0 bg-pink-600 p-2 rounded-l-md text-white">
+                    Before limit text
+                </div>
+            </div>
+            <div class="card bg-gray-100 relative hover:drop-shadow">
+                <img src="./images/cover.jpg" alt="cover">
+                <div class="p-6">
+                    <h3 class="font-bold mb-4">Save your time by using Trydo and present yours.</h3>
+                    <div class="opacity-60">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. have suffered alteration in some form majority.
+                    </div>
+                </div>
+                <a href="#" class="absolute inset-0"></a>
+                <div class="absolute top-4 right-0 bg-pink-600 p-2 rounded-l-md text-white">
+                    Before limit text
+                </div>
+            </div>
+            <div class="card bg-gray-100 relative hover:drop-shadow">
+                <img src="./images/cover.jpg" alt="cover">
+                <div class="p-6">
+                    <h3 class="font-bold mb-4">Save your time by using Trydo and present yours.</h3>
+                    <div class="opacity-60">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. have suffered alteration in some form majority.
+                    </div>
+                </div>
+                <a href="#" class="absolute inset-0"></a>
+                <div class="absolute top-4 right-0 bg-pink-600 p-2 rounded-l-md text-white">
+                    Before limit text
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-3 gap-8 mb-8">
+            <div class="card bg-gray-100 relative hover:drop-shadow">
+                <img src="./images/cover.jpg" alt="cover">
+                <div class="p-6">
+                    <h3 class="font-bold mb-4">Save your time by using Trydo and present yours.</h3>
+                    <div class="opacity-60 line-clamp-3">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. have suffered alteration in some form majority.
+                    </div>
+                </div>
+                <a href="#" class="absolute inset-0"></a>
+                <div class="absolute top-4 right-0 bg-green-600 p-2 rounded-l-md text-white">
+                    After limit text
+                </div>
+            </div>
+            <div class="card bg-gray-100 relative hover:drop-shadow">
+                <img src="./images/cover.jpg" alt="cover">
+                <div class="p-6">
+                    <h3 class="font-bold mb-4">Save your time by using Trydo and present yours.</h3>
+                    <div class="opacity-60 line-clamp-3">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. have suffered alteration in some form majority.
+                    </div>
+                </div>
+                <a href="#" class="absolute inset-0"></a>
+                <div class="absolute top-4 right-0 bg-green-600 p-2 rounded-l-md text-white">
+                    After limit text
+                </div>
+            </div>
+            <div class="card bg-gray-100 relative hover:drop-shadow">
+                <img src="./images/cover.jpg" alt="cover">
+                <div class="p-6">
+                    <h3 class="font-bold mb-4">Save your time by using Trydo and present yours.</h3>
+                    <div class="opacity-60 line-clamp-3">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. have suffered alteration in some form majority.
+                    </div>
+                </div>
+                <a href="#" class="absolute inset-0"></a>
+                <div class="absolute top-4 right-0 bg-green-600 p-2 rounded-l-md text-white">
+                    After limit text
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
