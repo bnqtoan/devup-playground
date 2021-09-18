@@ -17,7 +17,7 @@
                 <h3 class="font-bold mb-4 text-red-500">Before UI Customization</h3>
                 <label>
                     <input type="checkbox">
-                    <span>Tôi đồng ý với các điều khoản</span>
+                    <span>I agreed with terms and conditions.</span>
                 </label>
             </div>
             <div>
@@ -29,8 +29,27 @@
                             <path d="M3.375 9L7.125 12.75L14.625 5.25" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>                
                     </span>
-                    <span>Tôi đồng ý với các điều khoản</span>
+                    <span>I agreed with terms and conditions.</span>
                 </label>
+            </div>
+        </div>
+        <h2 class="mb-8">Dropdown box</h2>
+        <div x-data="{options: [
+            {'value': 'apple', 'label': 'Apple'}, 
+            {'value': 'beet', 'label': 'Beet'},
+            {'value' : 'Blueberry', 'label': 'Blueberry'}
+        ], selected: false}" x-init="selected = options[0].value">
+            <select x-model="selected">
+                <template x-for="option in options" :key="option.value">
+                    <option value="option.value" x-text="option.label"></option>
+                </template>
+            </select>
+            <div class="border border-gray-300 p-4 inline-block">
+                <div x-text="selected"></div>
+                <hr>
+                <template x-for="option in options" :key="'ui-'+option.value">
+                    <div class="cursor-pointer" @click="selected = option.value" value="option.value" x-text="option.label"></div>
+                </template>
             </div>
         </div>
     </div>

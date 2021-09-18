@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.slick-arrow{
+    @apply absolute top-1/2 transform -mt-20;
+    @apply z-50;
+    @apply bg-white rounded-full p-2 opacity-75 hover:opacity-100 hover:bg-pink-300;
+}
+.slick-prev{
+    @apply -left-2;
+}
+
+.slick-next{
+    @apply -right-2;
+}
+
+.slick-list{
+    padding-right: 100px;
+}
+
+.slick-dots{
+    @apply flex my-4 w-full justify-center gap-2;
+}
+
+.slick-dots li{
+    @apply w-4 h-4 rounded-full bg-gray-600 cursor-pointer;
+    text-indent:  -99999px;
+}
+.slick-dots .slick-active{
+    @apply bg-pink-600;
+}
+@screen md{
+    .slick-list{
+        padding-right: 0;
+    }
+}
