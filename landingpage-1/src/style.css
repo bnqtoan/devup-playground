@@ -1,1 +1,33 @@
-@tailwind base; @tailwind components; @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.chat__messsage::before, .chat__messsage::after{
+    content: "";
+    @apply absolute bg-white;
+}
+
+.chat__messsage::before{
+    @apply w-4 h-4 rounded-full -bottom-2;
+}
+
+.chat__messsage::after{
+    @apply w-2 h-2 rounded-full -bottom-4;
+}
+
+.chat__messsage-left::before{
+    @apply left-8;
+}
+
+.chat__messsage-left::after{
+    @apply left-5;
+}
+
+.chat__messsage-right::before{
+    @apply right-8;
+}
+
+.chat__messsage-right::after{
+    @apply right-5;
+}

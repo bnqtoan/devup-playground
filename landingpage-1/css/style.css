@@ -598,6 +598,9 @@ video {
 *, ::before, ::after {
   --tw-border-opacity: 1;
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
 }
 
 .container {
@@ -640,6 +643,10 @@ video {
   position: fixed;
 }
 
+.relative {
+  position: relative;
+}
+
 .inset-0 {
   top: 0px;
   right: 0px;
@@ -673,6 +680,11 @@ video {
 
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mb-6 {
@@ -715,6 +727,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -739,12 +755,20 @@ video {
   height: 2.25rem;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .w-full {
   width: 100%;
 }
 
 .w-9 {
   width: 2.25rem;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .max-w-md {
@@ -763,12 +787,20 @@ video {
   max-width: 36rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -827,6 +859,19 @@ video {
   row-gap: 3rem;
 }
 
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -835,8 +880,16 @@ video {
   border-radius: 0.75rem;
 }
 
-.border {
-  border-width: 1px;
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.border-3 {
+  border-width: 3px;
 }
 
 .border-light {
@@ -847,6 +900,26 @@ video {
 .border-primary {
   --tw-border-opacity: 1;
   border-color: rgba(2, 137, 122, var(--tw-border-opacity));
+}
+
+.border-\[\#FF0909\] {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 9, 9, var(--tw-border-opacity));
+}
+
+.border-\[\#740A76\] {
+  --tw-border-opacity: 1;
+  border-color: rgba(116, 10, 118, var(--tw-border-opacity));
+}
+
+.border-\[\#02897A\] {
+  --tw-border-opacity: 1;
+  border-color: rgba(2, 137, 122, var(--tw-border-opacity));
+}
+
+.border-\[\#035B81\] {
+  --tw-border-opacity: 1;
+  border-color: rgba(3, 91, 129, var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -878,8 +951,16 @@ video {
   background-image: url(../images/bg/bg-1.svg);
 }
 
+.bg-bg-2 {
+  background-image: url(../images/bg/bg-2.svg);
+}
+
 .bg-bottom {
   background-position: bottom;
+}
+
+.bg-center-top {
+  background-position: center top;
 }
 
 .bg-no-repeat {
@@ -923,8 +1004,17 @@ video {
   padding-right: 2rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pb-24 {
   padding-bottom: 6rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .text-center {
@@ -987,12 +1077,54 @@ video {
   text-decoration: underline;
 }
 
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition {
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.chat__messsage::before, .chat__messsage::after{
+  content: "";
+  position: absolute;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.chat__messsage::before {
+  bottom: -0.5rem;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 9999px;
+}
+
+.chat__messsage::after {
+  bottom: -1rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 9999px;
+}
+
+.chat__messsage-left::before {
+  left: 2rem;
+}
+
+.chat__messsage-left::after {
+  left: 1.25rem;
+}
+
+.chat__messsage-right::before {
+  right: 2rem;
+}
+
+.chat__messsage-right::after {
+  right: 1.25rem;
 }
 
 .hover\:border-primary:hover {
@@ -1034,6 +1166,10 @@ video {
   background-image: url(../images/bg/bg-1-dark.svg);
 }
 
+.dark .dark\:bg-bg-2-dark {
+  background-image: url(../images/bg/bg-2-dark.svg);
+}
+
 .dark .dark\:fill-current {
   fill: currentColor;
 }
@@ -1041,6 +1177,11 @@ video {
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.dark .dark\:text-dark-900 {
+  --tw-text-opacity: 1;
+  color: rgba(47, 40, 30, var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
