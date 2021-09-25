@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="font-body dark:bg-dark transition text-dark-800">
     <!-- start header -->
@@ -262,6 +263,7 @@
         </div>
     </div>
     <!-- end section Collaborative -->
+    <!-- start Quick & Easy Process-->
     <div class="dark:bg-bg-2-dark bg-bg-2 bg-center-top bg-no-repeat pt-14">
         <div class="container px-8 sm:px-0 dark:text-white mb-36">
         <h3 class="text-center text-h3 font-bold mb-6">Quick & Easy Process</h3>
@@ -309,8 +311,94 @@
             </div>
         </div>
     </div>
-    
+    <!-- end Quick & Easy Process-->
+    <!-- start Contents Strategies-->
+    <div class="pt-14">
+        <div class="container">
+            <h3 class="text-h3 font-bold mb-2 dark:text-white">Contents Strategies</h3>
+            <div class="mb-7 dark:text-white">
+                We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+            </div>
+            <div class="slides">
+                <div class="slide px-4">
+                    <div class="border border-gray-1000 rounded-lg group bg-white">
+                        <a href="#" class="mb-6 block">
+                            <img class="w-full" src="./images/blog/blog-1.png" alt="blog-1">
+                        </a>
+                        <div class="my-3 px-6">
+                            By <b><a href="#">Wahid Ari</a></b> |  03 March 2019
+                        </div>
+                        <h4 class="mb-10 px-6 text-h4-large font-bold group-hover:text-primary">
+                            <a href="#">
+                                Increasing Prosperity With Positive Thinking
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="slide  px-4">
+                    <div class="border border-gray-1000 rounded-lg group bg-white">
+                        <a href="#" class="mb-6 block">
+                            <img class="w-full" src="./images/blog/blog-2.png" alt="blog-1">
+                        </a>
+                        <div class="my-3 px-6">
+                            By <b><a href="#">Wahid Ari</a></b> |  03 March 2019
+                        </div>
+                        <h4 class="mb-10 px-6 text-h4-large font-bold group-hover:text-primary">
+                            <a href="#">
+                                Motivation Is The First Step To Success
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="slide  px-4">
+                    <div class="border border-gray-1000 rounded-lg group bg-white">
+                        <a href="#" class="mb-6 block">
+                            <img class="w-full" src="./images/blog/blog-3.png" alt="blog-1">
+                        </a>
+                        <div class="my-3 px-6">
+                            By <b><a href="#">Wahid Ari</a></b> |  03 March 2019
+                        </div>
+                        <h4 class="mb-10 px-6 text-h4-large font-bold group-hover:text-primary">
+                            <a href="#">
+                                Success Steps For Your Personal Or Business
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="slide px-4">
+                    <div class="border border-gray-1000 rounded-lg group bg-white">
+                        <a href="#" class="mb-6 block">
+                            <img class="w-full" src="./images/blog/blog-1.png" alt="blog-1">
+                        </a>
+                        <div class="my-3 px-6">
+                            By <b><a href="#">Wahid Ari</a></b> |  03 March 2019
+                        </div>
+                        <h4 class="mb-10 px-6 text-h4-large font-bold group-hover:text-primary">
+                            <a href="#">
+                                Increasing Prosperity With Positive Thinking
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- end Contents Strategies-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
+
+        (function($){
+            $(document).ready(function(){
+                $('.slides').slick({
+                    slidesToShow: 3,
+                    arrows: false,
+                    dots: true
+                });
+            });
+        })(jQuery);
+
         var main_menu_el = document.getElementById('main-menu');
         var btn_close_menu_el = document.getElementById('btn-close-menu');
         

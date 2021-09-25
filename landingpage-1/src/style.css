@@ -31,3 +31,17 @@
 .chat__messsage-right::after{
     @apply right-5;
 }
+
+.slick-list{
+    @apply -mx-4;
+}
+.slick-dots{
+    @apply flex mt-16 justify-center gap-x-3;
+}
+.slick-dots li{
+    text-indent: -9999px;
+    @apply w-4 h-4 bg-gray-1001 rounded-full cursor-pointer;
+}
+.slick-dots li.slick-active{
+    @apply bg-primary;
+}

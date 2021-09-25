@@ -687,6 +687,11 @@ video {
   margin-right: auto;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -729,6 +734,14 @@ video {
 
 .mb-12 {
   margin-bottom: 3rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.block {
+  display: block;
 }
 
 .inline-block {
@@ -797,10 +810,6 @@ video {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -888,6 +897,14 @@ video {
   border-radius: 1.5rem;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
 .border-3 {
   border-width: 3px;
 }
@@ -920,6 +937,11 @@ video {
 .border-\[\#035B81\] {
   --tw-border-opacity: 1;
   border-color: rgba(3, 91, 129, var(--tw-border-opacity));
+}
+
+.border-gray-1000 {
+  --tw-border-opacity: 1;
+  border-color: rgba(222, 222, 222, var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -1045,6 +1067,11 @@ video {
   line-height: 1.5;
 }
 
+.text-h4-large {
+  font-size: 24px;
+  line-height: 40px;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1127,6 +1154,34 @@ video {
   right: 1.25rem;
 }
 
+.slick-list {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.slick-dots {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+.slick-dots li{
+  text-indent: -9999px;
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(239, 239, 239, var(--tw-bg-opacity));
+}
+
+.slick-dots li.slick-active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(2, 137, 122, var(--tw-bg-opacity));
+}
+
 .hover\:border-primary:hover {
   --tw-border-opacity: 1;
   border-color: rgba(2, 137, 122, var(--tw-border-opacity));
@@ -1155,6 +1210,11 @@ video {
 .hover\:text-secondary:hover {
   --tw-text-opacity: 1;
   color: rgba(23, 58, 86, var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-primary {
+  --tw-text-opacity: 1;
+  color: rgba(2, 137, 122, var(--tw-text-opacity));
 }
 
 .dark .dark\:bg-dark {

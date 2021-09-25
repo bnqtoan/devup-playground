@@ -8,13 +8,13 @@ module.exports = {
       container: {
         center: true
       },
-      borderWidth: {
-          "3": "3px"
-      },
       fontFamily: {
         'body': ["'Poppins', sans-serif"]
       },
       extend: {
+        borderWidth: {
+          "3": "3px"
+        },
         maxWidth: {
             'xxs' : "240px"
         },
@@ -22,6 +22,7 @@ module.exports = {
           "h2": ["40px", {lineHeight: 1.5}],
           "h3": ["32px", {lineHeight: 1.5}],
           "h4": ["22px", {lineHeight: 1.5}],
+          "h4-large": ["24px", {lineHeight: '40px'}],
           "h6": ["16px", {lineHeight: 1.5}],
           "p-l": ["18px", {lineHeight: "28px"}]
         },
@@ -38,6 +39,10 @@ module.exports = {
           "light" : '#BCD0E5',
           "secondary": '#173A56',
           "primary" : '#02897A',
+          "gray": {
+              "1000" : "#DEDEDE",
+              "1001" : "#EFEFEF",
+          },
           "dark" : {
             "DEFAULT" : '#1F2E35',
             "800": '#22343D',
