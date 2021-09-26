@@ -12,6 +12,9 @@ module.exports = {
         'body': ["'Poppins', sans-serif"]
       },
       extend: {
+        boxShadow: {
+          "pricing": '0px 2px 8px rgba(0, 0, 0, 0.25)'
+        },
         borderWidth: {
           "3": "3px"
         },
@@ -36,6 +39,7 @@ module.exports = {
             'bg-2-dark': "url(../images/bg/bg-2-dark.svg)",
         },
         colors: {
+          "second-text": "#AFAFAF",
           "light" : '#BCD0E5',
           "secondary": '#173A56',
           "primary" : '#02897A',
